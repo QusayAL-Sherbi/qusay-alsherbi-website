@@ -210,7 +210,7 @@ section .row {
   flex-direction: row;
 }
 
-.services-section .services-container div {
+.services-section .services-container > div {
   background-color: #2b3034;
   box-shadow: 0 0 2px 0 #DDD;
   width: 33%;
@@ -220,6 +220,10 @@ section .row {
 
 .services-section .services-container div img {
   width: 100%;
+}
+
+.services-section .services-container div .services-details {
+  padding: 5px;
 }
 
 @media (max-width: 767px) {
@@ -323,7 +327,7 @@ section .row {
 .testimonials-section .testimonials-container .testi-info {
   background-color: #2b3034;
   box-shadow: 0 0 2px 0 #DDD;
-  width: calc(100% / 4);
+  width: 100%;
   min-height: 320px;
   margin: 10px;
   text-align: center;
@@ -353,7 +357,6 @@ section .row {
     width: 98%;
   }
 }
-
 
 /* Contact Section */
 .contact-section form {
